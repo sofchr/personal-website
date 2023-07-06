@@ -1,0 +1,12 @@
+.navbar {
+    overflow: hidden;
+    background-color: rgb(39, 148, 154);
+    position: fixed; /* stays in fixed position */
+    top: 0; /* positions at top of page */
+    width: 100%; /* Full width of page */
+    font-size: large;
+  }
+
+  .body{
+    margin-top: 40px;
+  }
