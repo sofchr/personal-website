@@ -10,3 +10,12 @@
   .body{
     margin-top: 40px;
   }
+
+  .outer-container {
+    display: inline-block;
+  }
+
+  .inner-container{
+    color: darkgreen;
+  }
+  
