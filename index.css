@@ -1,21 +1,55 @@
 .navbar {
-    overflow: hidden;
-    background-color: rgb(39, 148, 154);
-    position: fixed; /* stays in fixed position */
-    top: 0; /* positions at top of page */
-    width: 100%; /* Full width of page */
-    font-size: large;
-  }
+  overflow: hidden;
+  background-color: rgb(170, 210, 9);
+  position: fixed; /* stays in fixed position */
+  top: 0; /* positions at top of page */
+  width: 100%; /* Full width of page */
+  font-size: large;
+}
 
-  .body{
-    margin-top: 40px;
-  }
+h1 {
+  margin-top: 100px;
+}
 
-  .outer-container {
-    display: inline-block;
-  }
+.outer-container {
+  display: inline-block;
+}
 
-  .inner-container{
-    color: darkgreen;
-  }
+.inner-container {
+  color: darkgreen;
+  padding: 40px;
+}
+
+.navbar {
+  color: black;
+  padding: 20px;
+  border-style: groove;
+  border-color: black;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.all-examples {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 8px;
+}
+
+.examples {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-style: solid;
+  border-radius: 10px;
   
+}
+
+@media screen and (max-width: 900px) {
+  .column {
+    width: 33%;
+  }
+}
+
+img:hover {
+  transform: scale(2);
+}
