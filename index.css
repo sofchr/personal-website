@@ -1,55 +1,95 @@
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  box-sizing: border-box;
+}
+
 .navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   overflow: hidden;
-  background-color: rgb(170, 210, 9);
-  position: fixed; /* stays in fixed position */
+  background-color: #78c2c3;
+  position: fixed; /* stays at top of page when scrolling*/
   top: 0; /* positions at top of page */
-  width: 100%; /* Full width of page */
+  width: 100%;
   font-size: large;
+  color: #1e555c;
+  padding: 20px;
+  border: 2px solid black;
+}
+
+.nav-options {
+  display: flex;
+  grid-gap: 30px;
+}
+
+.link-name {
+  text-decoration: none;
+  color: #1e555c;
+}
+
+a.link-name:hover {
+  color: #eff6e0;
+  text-decoration: none;
+}
+
+a.link-name:active {
+  color: #598392;
+}
+
+body {
+  background-color: #cff9ff;
+  margin: 0px;
+}
+
+.contents {
+  padding: 16px;
 }
 
 h1 {
   margin-top: 100px;
+  text-align: center;
 }
 
-.outer-container {
-  display: inline-block;
-}
-
-.inner-container {
-  color: darkgreen;
-  padding: 40px;
-}
-
-.navbar {
-  color: black;
-  padding: 20px;
-  border-style: groove;
-  border-color: black;
-  font-family: "Courier New", Courier, monospace;
+h2 {
+  text-align: center;
 }
 
 .all-examples {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  grid-gap: 8px;
+  grid-gap: 16px;
 }
 
 .examples {
   display: flex;
   align-items: center;
+  justify-content: center;
+  text-align: center;
   flex-direction: column;
   border-style: solid;
   border-radius: 10px;
-  
+  background-color: #598392;
+  padding: 5px;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 0;
 }
 
-@media screen and (max-width: 900px) {
-  .column {
-    width: 33%;
-  }
+.my-photo {
+  text-align: center;
 }
 
-img:hover {
-  transform: scale(2);
+img.zoomable:hover {
+  transform: scale(3);
+}
+
+footer {
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 10px;
+  font-size: x-small;
+  color: #1e555c;
 }
