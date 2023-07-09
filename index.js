@@ -1,6 +1,6 @@
 const name = 'Sofie Christensen';
 
-const message = `Welcome to the website of ${name}`;
+const message = `Welcome to the website of ${name}!`;
 
 console.log(message);
 

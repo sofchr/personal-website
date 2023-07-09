@@ -1,7 +1,7 @@
 * {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  box-sizing: border-box;
+  box-sizing: border-box; /*make sure border stays on page*/
 }
 
 .navbar {
@@ -70,7 +70,7 @@ h2 {
   text-align: center;
   flex-direction: column;
   border-style: solid;
-  border-radius: 10px;
+  border-radius: 10px; /*curve border*/
   background-color: #598392;
   padding: 5px;
   flex-grow: 1;
