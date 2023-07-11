@@ -93,3 +93,9 @@ footer {
   font-size: x-small;
   color: #1e555c;
 }
+
+.form {
+  display: flex;
+  justify-content: center;
+  padding: 15%;
+}
