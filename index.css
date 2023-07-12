@@ -36,7 +36,7 @@
 }
 
 a.link-name:hover {
-  color: #eff6e0;
+  color: #cff9ff;
   text-decoration: none;
 }
 
@@ -51,11 +51,14 @@ body {
 
 .contents {
   padding: 16px;
+  text-align: center;
 }
 
 h1 {
   margin-top: 100px;
   text-align: center;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 h2 {
@@ -83,9 +86,13 @@ h2 {
   flex-shrink: 0;
   flex-basis: 0;
 }
-
+/* need to tweak shadow dimensions */
 .my-photo {
-  text-align: center;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 8px 0 rgba(0, 0, 0, 0.19);
+}
+
+.zoomable {
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.19);
 }
 
 img.zoomable:hover {
@@ -104,6 +111,16 @@ footer {
   display: flex;
   justify-content: center;
   padding: 15%;
+}
+
+input[type="text"] {
+  border: 2px solid #1e555c;
+  border-radius: 5px;
+}
+
+input[type="email"] {
+  border: 2px solid #1e555c;
+  border-radius: 5px;
 }
 
 .thanks {
