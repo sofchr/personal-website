@@ -19,9 +19,15 @@
   border: 2px solid black;
 }
 
+@media (max-width: 500px) {
+  .navbar {
+    font-size: x-small;
+  }
+}
+
 .nav-options {
   display: flex;
-  grid-gap: 30px;
+  grid-gap: 10px;
 }
 
 .link-name {
@@ -98,4 +104,28 @@ footer {
   display: flex;
   justify-content: center;
   padding: 15%;
+}
+
+.thanks {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0%;
+  background-color: aliceblue;
+  margin: 30%;
+  border-style: double;
+  border-width: 0.5rem;
+}
+
+.thanks-2 {
+  padding: 10%;
+  margin: 10%;
+  border-style: dotted;
+}
+
+@media (max-width: 500px) {
+  .thanks-2 {
+    font-size: x-small;
+  }
 }
