@@ -12,7 +12,7 @@
   background-color: #78c2c3;
   position: fixed; /* stays at top of page when scrolling*/
   top: 0; /* positions at top of page */
-  width: 100%;
+  width: 100vw; /*added vw instead of %*/
   font-size: large;
   color: #1e555c;
   padding: 20px;
@@ -78,6 +78,7 @@ h2 {
   justify-content: center;
   text-align: center;
   flex-direction: column;
+  flex-wrap: wrap;
   border-style: solid;
   border-radius: 10px; /*curve border*/
   background-color: #598392;
@@ -93,10 +94,12 @@ h2 {
 
 .zoomable {
   box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.19);
+  border-style: solid;
+  border-width: 2px;
 }
 
 img.zoomable:hover {
-  transform: scale(3);
+  transform: scale(2);
 }
 
 footer {
@@ -111,6 +114,11 @@ footer {
   display: flex;
   justify-content: center;
   padding: 15%;
+  border-style: dotted;
+  border-width: 2px;
+  border-color: black;
+  margin: 25%;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.19);
 }
 
 input[type="text"] {
@@ -119,6 +127,11 @@ input[type="text"] {
 }
 
 input[type="email"] {
+  border: 2px solid #1e555c;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
   border: 2px solid #1e555c;
   border-radius: 5px;
 }
@@ -133,6 +146,7 @@ input[type="email"] {
   margin: 30%;
   border-style: double;
   border-width: 0.5rem;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.19);
 }
 
 .thanks-2 {
@@ -145,4 +159,14 @@ input[type="email"] {
   .thanks-2 {
     font-size: x-small;
   }
+}
+
+@media (max-width: 500px) {
+  .all-examples {
+    flex-wrap: wrap;
+  }
+}
+
+.examples img {
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.19);
 }
