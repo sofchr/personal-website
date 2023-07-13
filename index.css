@@ -80,14 +80,14 @@ h2 {
   flex-direction: column;
   flex-wrap: wrap;
   border-style: solid;
-  border-radius: 10px; /*curve border*/
+  border-radius: 10px;
   background-color: #598392;
   padding: 5px;
   flex-grow: 1;
   flex-shrink: 0;
   flex-basis: 0;
 }
-/* need to tweak shadow dimensions */
+
 .my-photo {
   box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 8px 0 rgba(0, 0, 0, 0.19);
 }
@@ -114,10 +114,11 @@ footer {
   display: flex;
   justify-content: center;
   padding: 15%;
+  background-color: #78c2c3;
   border-style: dotted;
   border-width: 2px;
   border-color: black;
-  margin: 25%;
+  margin: 10% 20% 10% 20%;
   box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.19);
 }
 
